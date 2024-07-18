@@ -2,11 +2,11 @@
 var config = {
   entry: './main.js',
   output: {
-    path: './',
+    path: `${__dirname}/dist`,
     filename: 'index.js'
   },
   devServer: {
-    static: { directory: './' }
+    static: { directory: './dist' },
     hot: true,
     port: 3000
   },
